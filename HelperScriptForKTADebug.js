@@ -1,19 +1,12 @@
 /*
-// calls to show values in form
+// calls to show values in form, create JS Action, add this code, and link action to button or some other event.
 ShowFormVariables();
 ShowSessionVariables();
 ShowTextValues();
 */
 
 
-/*
-// select a row in a table from it's ID value
-// viewTable = table name
-// currentEntityID = entity ID of row
-// entityID = column name in table to check
-setSelectedRowByID (viewTable, currentEntityID, entityID);
-*/
-
+// add this code to the form's JavaScript Functions which will show the results of these calls in alerts.
 function ShowFormVariables()
 {
   var fva = thisForm.formVariables.formVariableArray;
@@ -55,6 +48,15 @@ function ShowTextValues()
   alert(msg);
 } 
 
+
+/*
+// Use this to programmatically select a row by it's entity ID.
+// select a row in a table from it's ID value
+// viewTable = table name
+// currentEntityID = entity ID of row
+// entityID = column name in table to check
+setSelectedRowByID (viewTable, currentEntityID, entityID);
+*/
 function setSelectedRowByID (viewTable, currentEntityID, entityID)
 {
       var tblStore = viewTable.getStore();
